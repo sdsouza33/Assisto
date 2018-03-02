@@ -99,7 +99,7 @@ public class CameraActivity extends Activity {
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_camera);
-    int i = 0;
+
 
     setUpTTS();
     /*
@@ -125,6 +125,13 @@ public class CameraActivity extends Activity {
   protected void onResume() {
     super.onResume();
     //setUpTTS();
+  }
+
+  protected void onPause(){
+    super.onPause();
+    t1.stop();
+    t1.shutdown();
+
   }
   protected void onDestroy(){
     super.onDestroy();

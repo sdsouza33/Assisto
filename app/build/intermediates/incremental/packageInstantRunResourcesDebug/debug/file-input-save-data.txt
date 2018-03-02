@@ -1,15 +1,19 @@
 #Internal package file, do not edit.
-#Sat Feb 03 11:23:25 IST 2018
+#Fri Mar 02 14:58:57 IST 2018
 1.base=E\:\\Assisto\\tflite\\app\\build\\intermediates\\assets\\debug
-2.path=graph.lite
+2.path=data_retrained_labels.txt
 0.baseType=DIRECTORY
+3.baseType=DIRECTORY
 2.base=E\:\\Assisto\\tflite\\app\\build\\intermediates\\assets\\debug
+3.set=ASSET
 2.set=ASSET
 1.baseType=DIRECTORY
-count=3
+3.path=New Text Document.txt
+count=4
 1.set=ASSET
 0.path=BUILD
+3.base=E\:\\Assisto\\tflite\\app\\build\\intermediates\\assets\\debug
 0.set=ASSET
 0.base=E\:\\Assisto\\tflite\\app\\build\\intermediates\\assets\\debug
 2.baseType=DIRECTORY
-1.path=labels.txt
+1.path=optimized_graph.lite
