@@ -35,7 +35,6 @@
         android:debuggable="true"
         android:icon="@drawable/ic_launcher"
         android:label="Assisto"
-        android:testOnly="true"
         android:theme="@style/MaterialTheme" >
         <activity
             android:name="com.example.android.tflitecamerademo.CameraActivity"

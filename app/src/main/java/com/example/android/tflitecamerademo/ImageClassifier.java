@@ -43,10 +43,10 @@ public class ImageClassifier {
   private static final String TAG = "TfLiteCameraDemo";
 
   /** Name of the model file stored in Assets. */
-  private static final String MODEL_PATH = "optimized_graph.lite";
+  private static final String MODEL_PATH = "optimized_graphA.lite";
 
   /** Name of the label file stored in Assets. */
-  private static final String LABEL_PATH = "data_retrained_labels.txt";
+  private static final String LABEL_PATH = "retrained_labels.txt";
 
   /** Number of results to show in the UI. */
   private static final int RESULTS_TO_SHOW = 3;

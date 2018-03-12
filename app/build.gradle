@@ -2,8 +2,8 @@ apply plugin: 'com.android.application'
 
 project.ext.ASSET_DIR = projectDir.toString() + '/src/main/assets'
 
-assert file(project.ext.ASSET_DIR + "/optimized_graph.lite").exists()
-assert file(project.ext.ASSET_DIR + "/data_retrained_labels.txt").exists()
+assert file(project.ext.ASSET_DIR + "/optimized_graphA.lite").exists()
+assert file(project.ext.ASSET_DIR + "/retrained_labels.txt").exists()
 
 android {
     compileSdkVersion 26
