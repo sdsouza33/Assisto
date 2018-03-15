@@ -28,7 +28,7 @@
     <application android:allowBackup="true"
         android:label="Assisto"
         android:icon="@drawable/ic_launcher"
-        android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
+        android:theme="@style/NoActionBar">
 
         <activity android:name="com.example.android.tflitecamerademo.CameraActivity"
                   android:label="@string/app_name">
