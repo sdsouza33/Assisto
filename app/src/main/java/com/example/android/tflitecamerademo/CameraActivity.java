@@ -129,7 +129,7 @@ public class CameraActivity extends AppCompatActivity {
   @Override
   protected void onResume() {
     super.onResume();
-    //setUpTTS();
+    setUpTTS();
   }
 
   protected void onPause(){

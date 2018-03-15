@@ -217,6 +217,8 @@ public class Camera2BasicFragment extends Fragment
                 @Override
                 public void run() {
 
+
+
                   textView.setText(text);
                   //new change
                   //Log.d("t1", t1.toString());
@@ -691,6 +693,9 @@ public class Camera2BasicFragment extends Fragment
             textureView.getBitmap(ImageClassifier.DIM_IMG_SIZE_X, ImageClassifier.DIM_IMG_SIZE_Y);
     String textToShow = classifier.classifyFrame(bitmap);
     bitmap.recycle();
+
+    textToShow = textToShow.trim();
+    textToShow = textToShow.substring(0,1).toUpperCase() + textToShow.substring(1);
     showToast(textToShow);
   }
 

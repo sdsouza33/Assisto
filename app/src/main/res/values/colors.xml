@@ -16,6 +16,7 @@
 -->
 <resources>
     <color name="colorPrimary">#cc421f</color>
+    <color name="colorPrimaryDark">#9b280b</color>
     <color name="toolbarText">#000000</color>
     <color name="toolbarBG">#cc421f</color>
 
