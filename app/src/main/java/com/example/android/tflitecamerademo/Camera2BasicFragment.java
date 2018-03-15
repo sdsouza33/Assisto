@@ -49,6 +49,7 @@ import android.speech.tts.TextToSpeech;
 import android.support.annotation.NonNull;
 import android.support.v13.app.FragmentCompat;
 import android.support.v4.content.ContextCompat;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.util.Size;
 import android.view.LayoutInflater;
@@ -297,7 +298,10 @@ public class Camera2BasicFragment extends Fragment
   }
 
   public static Camera2BasicFragment newInstance() {
-    return new Camera2BasicFragment();
+    Camera2BasicFragment cam = new Camera2BasicFragment();
+
+
+    return cam;
   }
 
   /** Layout the preview and buttons. */
