@@ -76,6 +76,8 @@ import static com.example.android.tflitecamerademo.CameraActivity.t1;
 public class Camera2BasicFragment extends Fragment
         implements FragmentCompat.OnRequestPermissionsResultCallback {
 
+  public static String message = "Starting up! Please wait...";
+
   /** Tag for the {@link Log}. */
   private static final String TAG = "TfLiteCameraDemo";
 
@@ -228,10 +230,11 @@ public class Camera2BasicFragment extends Fragment
                   //t1.speak(text,TextToSpeech.QUEUE_FLUSH,
                   //        null, "s");
 
-                  if(!t1.isSpeaking())
-                    t1.speak(text,TextToSpeech.QUEUE_FLUSH,
-                            null, "s");
-
+                  if(!text.equals(message)) {//"Uninitialized Classifier or invalid context."))
+                    if (!t1.isSpeaking())
+                      t1.speak(text, TextToSpeech.QUEUE_FLUSH,
+                              null, "s");
+                  }
 
 
 
@@ -686,7 +689,7 @@ public class Camera2BasicFragment extends Fragment
   /** Classifies a frame from the preview stream. */
   private void classifyFrame() {
     if (classifier == null || getActivity() == null || cameraDevice == null) {
-      showToast("Uninitialized Classifier or invalid context.");
+      showToast(message); //"Uninitialized Classifier or invalid context.");
       return;
     }
     Bitmap bitmap =
